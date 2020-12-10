@@ -23,7 +23,7 @@ router.post('/',async(req,res)=>{
             }
             
             para.save()
-            res.redirect('/user/login')
+            res.redirect('/')
         })
     } catch (error) {
         res.sendStatus(404).json({message: error})

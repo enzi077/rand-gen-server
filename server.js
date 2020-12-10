@@ -37,15 +37,11 @@ mongoose.connect(process.env.DB_CONNECTION,
 
 //routes
 app.get('/',async(req,res)=>{
-    res.redirect('http://localhost:3000/')
+    res.redirect('https://eventregistrationform.web.app/')
 })
 
 app.get('/registered',async(req,res)=>{
-    res.redirect('http://localhost:3000/registered')
-})
-
-app.get('/para',async(req,res)=>{
-    res.redirect('http://localhost:3000/para')
+    res.redirect('https://eventregistrationform.web.app/registered')
 })
 
 
