@@ -22,8 +22,10 @@ router.post('/',async(req,res)=>{
                 res.redirect('/registered')
             }
             else{
-                data.save()
-                res.redirect('/')
+                data.save((err,reg)=>{
+                    if(!err) res.redirect('/success')
+                    if(err) res.redirect('/failed')
+                })
             }
         })
     } catch (error) {

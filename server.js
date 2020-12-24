@@ -40,8 +40,19 @@ app.get('/',async(req,res)=>{
     res.redirect('https://eventregistrationform.web.app/')
 })
 
+//user has already registered before
 app.get('/registered',async(req,res)=>{
     res.redirect('https://eventregistrationform.web.app/registered')
+})
+
+//user registration is successful
+app.get('/success',async(req,res)=>{
+    res.redirect('https://eventregistrationform.web.app/success')
+})
+
+//user registration failed
+app.get('/failed',async(req,res)=>{
+    res.redirect('https://eventregistrationform.web.app/failed')
 })
 
 
